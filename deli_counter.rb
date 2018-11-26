@@ -5,3 +5,10 @@ def line(deli)
   
   deli.each_with_index do |d,i|
     result+= "#{i+1}. #{d}"
+    if(i <deli.length -1)
+      result+= ""
+    end
+  end
+  puts result
+end
+
