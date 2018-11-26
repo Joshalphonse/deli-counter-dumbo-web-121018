@@ -12,3 +12,15 @@ def line(deli)
   puts result
 end
 
+def take_a_number(queue, newguy)
+  queue.push(newguy)
+  puts "Welcome, #{newguy}. You are number #{queue.length} in line."
+end
+
+def now_serving(deli)
+  if(deli.length> 0)
+    puts "Currently serving #{deli.shift}."
+  else
+    puts "There is nobody waiting to be served!"
+  end
+end
